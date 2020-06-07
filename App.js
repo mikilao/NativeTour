@@ -1,19 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Main from './Components/MainComponent';
+import {colors} from "./styles"
+import TourView from './TourView/index'
+import {Image, StyleSheet, Text, View, ScrollView } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <ScrollView style={styles.container}>
+      <Text style={colors.text}>Tour app</Text>
+    <TourView />
+
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'colors.darkBg',
+   
   },
+ 
 });
