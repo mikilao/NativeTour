@@ -6,7 +6,7 @@ export const Colors = {
     lighthl: '#888',
     pinkbtn: "#ea3372",
     text: "#fff"
-},
+}
 export const SpacedGS = StyleSheet.create({
    rowCenter:{
    flexDirection: 'row',
@@ -17,7 +17,7 @@ export const SpacedGS = StyleSheet.create({
     justifyContent: 'space-between'
     },
     center:{
-        alignitems:'center',
+        alignItems:'center',
         justifyContent: 'center'
     }
 

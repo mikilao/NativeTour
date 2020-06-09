@@ -1,15 +1,17 @@
 import React from 'react';
 import Main from './Components/MainComponent';
-import {colors} from "./styles"
+import { Colors } from "./styles";
+import {Header} from "./Components/HeaderComponent";
 import TourView from './TourView/index'
-import {Image, StyleSheet, Text, View, ScrollView } from 'react-native';
+import { Image, StyleSheet, Text, View, ScrollView } from 'react-native';
 
 export default function App() {
+
   return (
     <ScrollView style={styles.container}>
-      <Text style={colors.text}>Tour app</Text>
-    <TourView />
-
+          <Header />
+          <TourView />
+          <Main />
     </ScrollView>
   );
 }
@@ -17,8 +19,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'colors.darkBg',
-   
+    backgroundColor: Colors.darkBg,
+
   },
- 
+
 });
