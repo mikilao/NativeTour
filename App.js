@@ -1,9 +1,9 @@
 import React from 'react';
 import Main from './Components/MainComponent';
 import { Colors } from "./styles";
-import {Header} from "./Components/HeaderComponent";
+import Header from "./Components/HeaderComponent";
 import TourView from './TourView/index'
-import { Image, StyleSheet, Text, View, ScrollView } from 'react-native';
+import { Image, StyleSheet, Animated, ScrollView } from 'react-native';
 
 export default function App() {
 
@@ -11,7 +11,7 @@ export default function App() {
     <ScrollView style={styles.container}>
           <Header />
           <TourView />
-          <Main />
+         
     </ScrollView>
   );
 }
@@ -22,5 +22,9 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.darkBg,
 
   },
+  rowCenter:{
+    flexDirection:'row',
+    justifyContent: 'space-between'
+  }
 
 });

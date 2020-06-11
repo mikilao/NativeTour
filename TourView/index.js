@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '../Components/HeaderComponent'
+import Header from '../Components/HeaderComponent';
+import About from '../Components/AboutComponent';
 //import {Colors} from "../styles"
 import BookMark from '../Components/BookmarkComponent'
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
@@ -8,10 +9,10 @@ export default function TourView() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
-      <Text  >Tour View</Text>
-      <View style={styles.container}>
-        
+         
+        <View >
         <BookMark />
+        <About />
       </View>
     </View>
   );
