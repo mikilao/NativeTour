@@ -1,30 +1,35 @@
-import React from 'react';
-import { StyleSheet,  View } from 'react-native';
-import {Feather} from '@expo/vector-icons';
-import {  SpacedGS} from '../styles';
-import {Icon} from 'react-native-elements';
+import React, {Component} from 'react';
+import { StyleSheet, View } from 'react-native';
+//import { Feather } from '@expo/vector-icons';
+import { SpacedGS } from '../styles';
+import { Icon } from 'react-native-elements';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-export default function BookMark() {
+export default class BookMark extends Component {
+  
+  render(){
   return (
     <View style={styles.bookmark}>
-    
-    <Icon
-  raised
-  name='plane'
-  type='font-awesome'
-  color={Colors.gold}
-  size={24}
-  id="Bookmark" 
-   color={Colors.gold}
-  onPress={() => console.log('hello')} />
+
+      <Icon
+        raised
+        reversed
+        name='plane' 
+        type='font-awesome'
+        color="#fff"
+        size={24}
+        id="Bookmark"
+       // ternary operator
+         onPress={() => console.log("favorited already")}
+    />
     </View>
-  );
+  )
+  }
 }
 const styles = StyleSheet.create({
- 
-    bookmark: {
-        position: "absolute",
+
+  bookmark: {
+    position: "absolute",
         width: 56,
         height:56,
         right: 32,
