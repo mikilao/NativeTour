@@ -2,21 +2,21 @@ import React from 'react';
 import Main from './Components/MainComponent';
 import { Colors } from "./styles";
 import Header from "./Components/HeaderComponent";
-import TourView from './TourView/index'
-import { Image, StyleSheet, Animated, ScrollView } from 'react-native';
-import { createStackNavigator } from 'react-navigation-stack';
-import Navigator from './Components/HomeComponent';
+import TourView from './TourView/index';
+import { Image, StyleSheet, Animated, ScrollView, Text } from 'react-native';
+import Navigator from './Components/NavComponent'
+import TourList from './Components/TourComponent';
+import Home from './Components/HomeComponent';
 
 export default function App() {
 
   return (
 
-    <ScrollView style={styles.container}>
-      
-     <Navigator />
-<Header />
-      <TourView />
-
+    <ScrollView styles={styles.container}>
+      <Text>HEllo</Text>
+     <Header />
+    <Home />
+  
     </ScrollView>
   );
 }

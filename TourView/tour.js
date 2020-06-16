@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { View, Text, Card, ScrollView } from 'react-native';
-import { Icon } from "react-native-vector-icons/Icon";
+import { View, Text, Card, ScrollView, StyleSheet } from 'react-native';
+import { Icon } from "react-native-elements";
+import {Colors} from "../styles"
 
 class Tour extends Component {
     state = {
